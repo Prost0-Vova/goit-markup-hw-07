@@ -776,6 +776,7 @@ line-height: 24px;
   
     
   }
+}
   
   @media screen and (min-width: 1200px){
 .feautures-icon {
@@ -855,7 +856,7 @@ color: var(--text-color)
   @media screen and (min-width: 768px){
 .feautures-h{
    display: flex;
-  text-align: center;
+ justify-content: flex-start;
    font-weight: 700;
 font-size: 36px;
 line-height: 40px;
