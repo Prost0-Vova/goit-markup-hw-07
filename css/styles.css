@@ -1014,9 +1014,7 @@ color: var(--text-color)
   text-align: center;
 }
 @media screen and (min-width: 768px){
-.customers-logo {
-   
-}
+
 .customers-link{
   width:168px;
 }
