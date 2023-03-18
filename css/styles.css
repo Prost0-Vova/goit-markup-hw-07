@@ -70,7 +70,7 @@ img {
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
         padding: 0px 15px
     }
 }
@@ -172,11 +172,7 @@ margin: 0 156px;
   margin-right: 76px;
 }
 
-@media screen and (min-width: 1200px){
-  .logo{
-    padding-right:44px;
-  }
-}
+
 
 .web {
   color: var(--accent-color);
@@ -278,7 +274,7 @@ text-decoration: none;
 .socials-list-mobile {
   display: flex;
   
-  gap: 56px;
+  gap: 30px;
   margin-top: 48px;
 }
 .socials-item-mobile {
@@ -695,6 +691,14 @@ line-height: 24px;
 .footer-div {
   display: inline-block;
 }
+@media screen and (min-width:1200px){
+  .footer-container{
+    flex-wrap: nowrap;  }
+    .footer-div{
+      margin-left:0;
+      margin-right: 120px;
+    }
+}
 
 /* Effective Solutions*/
 
@@ -788,6 +792,9 @@ line-height: 24px;
     align-items: center;
    
 }
+.feautures{
+    padding-bottom: 0px;
+  }
 }
 @media screen and (min-width: 1200px){
 .feautures-h {
@@ -904,6 +911,11 @@ color: var(--text-color)
   display: none;
   }
 }
+@media (min-width: 1200px){
+  .what-are-we-doing-section{
+  display: flex;
+  }
+}
 .what-are-we-doing {
   font-family: "Roboto";
   font-weight: 700;
@@ -934,6 +946,10 @@ color: var(--text-color)
 .our-team-list {
   display: flex;
 }
+.list-text-img:not(:last-child) {
+  margin-right: 24px;
+}
+
 @media (min-width: 320px){
   .our-team-list{
   display: flex;
@@ -955,6 +971,23 @@ color: var(--text-color)
     column-gap: 24px;
 }
 }
+@media screen and (min-width: 1200px){
+.our-team-list {
+   
+    flex-wrap: nowrap;
+    row-gap:24px;
+    column-gap:24px;
+  
+}
+.list-text-img{
+  margin-left: 0;
+  margin-right: 0;
+}
+.list-text-img:not(:last-child){
+  margin-left: 0;
+  margin-right: 0;
+}
+}
 .list-text-img {
   background-color: var(--background-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -963,9 +996,8 @@ color: var(--text-color)
   width: 264;
   height: 260;
 }
-.list-text-img:not(:last-child) {
-  margin-right: 24px;
-}
+
+
 .img-card {
   text-align: center;
   padding-top: 32px;
@@ -1162,7 +1194,7 @@ color: var(--text-color)
   .social-footer {
   
   margin-left: 0px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   
 }
 .social-footer h2 {
@@ -1443,13 +1475,22 @@ label{
   color: #757575;
   letter-spacing: 0.04em;
 }
+@media (min-width:320px){
+  .modal-form-check{
+    font-size:8px;
+  }
+  .modal{
+    width:90%;
+  }
+}
+
 .modal-policy {
   margin-left: 4px;
   text-decoration: underline;
   color: var(--logo-blue-color);
 }
 .modal-form-check::before {
-  content: '';
+  conte.modal-sunt: '';
   display: block;
   width: 16px;
   height: 16px;
@@ -1472,9 +1513,10 @@ label{
 
 
 .modal-submit {
+  display:block;
   width: 169px;
   height: 56px;
-  margin: 0 96px;
+  margin: 0 auto;
   
   
 
@@ -1537,7 +1579,7 @@ label{
  width:100%;
 }
 .subscribe-btn{
- margin-left: 48px;
+ margin: 0 auto;
   
     
 }
@@ -1566,6 +1608,7 @@ label{
 .subscribe-form {
   display: flex;
   width:100%;
+  margin-bottom:0px;
 }
 @media screen and (min-width: 768px){
 .subscribe-form {
@@ -1581,6 +1624,11 @@ label{
     flex-direction: row;
 }
 
+}
+@media screen and (min-width:1200px){
+  .subscribe-form{ 
+    gap:0px;
+  }
 }
 .subscribe-input {
 
@@ -1622,6 +1670,16 @@ label{
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width:768px){
+  .subscribe-btn{
+    margin-left:6px;
+  }
+}
+@media screen and (min-width:1200px){
+  .subscribe-btn{
+    margin-left:24px;
+  }
 }
 
 .subscribe-box .icon {
